@@ -1,12 +1,19 @@
 import Image from "next/image";
 import duaImage from "../../assets/duaHand.png";
+import duaCatImg from "../../assets/fever.png";
+import icon1 from "../../assets/icon1.svg";
+import bookmark1 from "../../assets/bookmark1.svg";
+import frame from "../../assets/Frame(1).svg";
+import frame2 from "../../assets/Frame.svg";
+import report from "../../assets/report1.svg";
+import share from "../../assets/share1.svg";
 
 const HomePage = () => {
   return (
     <div className="bg-[#F7F8FA] max-w-screen py-6">
       <div className="flex">
         <div className="my-6 ">
-          <div className="h-full p-3 w-20 ml-5 justify-center  bg-white text-gray-100 rounded-3xl pl-5 shadow-lg">
+          <div className=" p-3 w-20 ml-5 justify-center  bg-white text-gray-100 rounded-3xl pl-5 shadow-lg">
             <Image
               src={duaImage}
               width={73}
@@ -303,7 +310,195 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="mt-14 ml-5 font-bold flex">
+
+        {/* category */}
+        <div className="my-6 ">
+          <h1 className="mt-4 ml-5 font-bold text-[24px]">Dua Page</h1>
+          <div className=" w-[429px] ml-5 justify-center  bg-white text-gray-100 rounded-3xl shadow-lg ">
+            <div className="bg-[#1FA45B] rounded-t-lg h-[50px]  mt-8">
+              <div className="pl-3.5 pt-3 text-center">
+                {/* books */}
+                <h1>Category</h1>
+              </div>
+            </div>
+
+            {/* search field */}
+            <fieldset className="w-full space-y-1 text-gray-100">
+              <div className="relative mt-4 mx-3">
+                <span className="absolute inset-y-0 left-0 flex items-center pl-2 ">
+                  <button
+                    type="button"
+                    title="search"
+                    className="p-1 focus:outline-none focus:ring"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.5 20.5L16 16M18 11C18 11.9193 17.8189 12.8295 17.4672 13.6788C17.1154 14.5281 16.5998 15.2997 15.9497 15.9497C15.2997 16.5998 14.5281 17.1154 13.6788 17.4672C12.8295 17.8189 11.9193 18 11 18C10.0807 18 9.1705 17.8189 8.32122 17.4672C7.47194 17.1154 6.70026 16.5998 6.05025 15.9497C5.40024 15.2997 4.88463 14.5281 4.53284 13.6788C4.18106 12.8295 4 11.9193 4 11C4 9.14348 4.7375 7.36301 6.05025 6.05025C7.36301 4.7375 9.14348 4 11 4C12.8565 4 14.637 4.7375 15.9497 6.05025C17.2625 7.36301 18 9.14348 18 11Z"
+                        stroke="#868686"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </span>
+                <input
+                  type="search"
+                  name="Search"
+                  placeholder="Search Category"
+                  className="py-4 pl-10 text-sm rounded-md sm:w-auto focus:outline-green-500 bg-white text-black border"
+                  style={{ width: "25rem" }}
+                />
+              </div>
+            </fieldset>
+            <div className="pb-7">
+              <div className="bg-[#E8F0F5] mr-5 rounded-lg w-[400px] mx-3 my-4 p-[10px] flex">
+                <div className="bg-[#CFE0E5]  rounded-lg h-[50px] w-[50px] p-[10px]">
+                  <Image
+                    src={duaCatImg}
+                    height={40}
+                    width={40}
+                    alt="duaCatImg"
+                  />
+                </div>
+                <div className="flex gap-32 ml-3">
+                  <div>
+                    <h1 className="text-[#1FA45B]">Introduction to Dua</h1>
+                    <h1 className="text-[#7E7E7E]">Subcategory: 11</h1>
+                  </div>
+                  <div>
+                    <h1 className="text-[#393939] pl-2">15</h1>
+                    <h1 className="text-[#7E7E7E]">Duas</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#E8F0F5] mr-5 rounded-lg w-[400px] mx-3 my-4 p-[10px] flex">
+                <div className="bg-[#CFE0E5]  rounded-lg h-[50px] w-[50px] p-[10px]">
+                  <Image
+                    src={duaCatImg}
+                    height={40}
+                    width={40}
+                    alt="duaCatImg"
+                  />
+                </div>
+                <div className="flex gap-32 ml-3">
+                  <div>
+                    <h1 className="text-[#1FA45B]">Introduction to Dua</h1>
+                    <h1 className="text-[#7E7E7E]">Subcategory: 11</h1>
+                  </div>
+                  <div>
+                    <h1 className="text-[#393939] pl-2">15</h1>
+                    <h1 className="text-[#7E7E7E]">Duas</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#E8F0F5] mr-5 rounded-lg w-[400px] mx-3 my-4 p-[10px] flex">
+                <div className="bg-[#CFE0E5]  rounded-lg h-[50px] w-[50px] p-[10px]">
+                  <Image
+                    src={duaCatImg}
+                    height={40}
+                    width={40}
+                    alt="duaCatImg"
+                  />
+                </div>
+                <div className="flex gap-32 ml-3">
+                  <div>
+                    <h1 className="text-[#1FA45B]">Introduction to Dua</h1>
+                    <h1 className="text-[#7E7E7E]">Subcategory: 11</h1>
+                  </div>
+                  <div>
+                    <h1 className="text-[#393939] pl-2">15</h1>
+                    <h1 className="text-[#7E7E7E]">Duas</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#E8F0F5] mr-5 rounded-lg w-[400px] mx-3 my-4 p-[10px] flex">
+                <div className="bg-[#CFE0E5]  rounded-lg h-[50px] w-[50px] p-[10px]">
+                  <Image
+                    src={duaCatImg}
+                    height={40}
+                    width={40}
+                    alt="duaCatImg"
+                  />
+                </div>
+                <div className="flex gap-32 ml-3">
+                  <div>
+                    <h1 className="text-[#1FA45B]">Introduction to Dua</h1>
+                    <h1 className="text-[#7E7E7E]">Subcategory: 11</h1>
+                  </div>
+                  <div>
+                    <h1 className="text-[#393939] pl-2">15</h1>
+                    <h1 className="text-[#7E7E7E]">Duas</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#E8F0F5] mr-5 rounded-lg w-[400px] mx-3 my-4 p-[10px] flex">
+                <div className="bg-[#CFE0E5]  rounded-lg h-[50px] w-[50px] p-[10px]">
+                  <Image
+                    src={duaCatImg}
+                    height={40}
+                    width={40}
+                    alt="duaCatImg"
+                  />
+                </div>
+                <div className="flex gap-32 ml-3">
+                  <div>
+                    <h1 className="text-[#1FA45B]">Introduction to Dua</h1>
+                    <h1 className="text-[#7E7E7E]">Subcategory: 11</h1>
+                  </div>
+                  <div>
+                    <h1 className="text-[#393939] pl-2">15</h1>
+                    <h1 className="text-[#7E7E7E]">Duas</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* section */}
+        <div className="my-28 space-y-5">
+          <div className="h-auto w-[800px] ml-5 justify-center  bg-white text-gray-100 rounded-lg shadow-lg py-[15px] px-[30px]">
+            <h1 className="text-[#393939]">
+              <span className="text-[#1FA45B]">Section:</span> The servant is
+              dependent on his Lord
+            </h1>
+          </div>
+          <div className="h-auto w-[800px] ml-5 justify-center  bg-white text-gray-100 rounded-lg shadow-lg py-[15px] px-[30px]">
+            <h1 className="text-[#393939] flex gap-1 pt-2">
+              <Image src={icon1} alt="this is icon" />
+              <span className="text-[#1FA45B] pt-2">
+                1. The servant is dependent on his Lord #1
+              </span>
+            </h1>
+            <h1 className="text-[#393939] flex gap-1 py-[28px]">
+              All human beings depend on Allah for their welfare and prevention
+              of evil in various matters of their religion and world. Allah says
+              (interpretation of the meaning): O mankind, you are those in need
+              of Allah, while Allah is the Free of need, the Praiseworthy.
+            </h1>
+            <h1 className="text-[#393939] flex gap-1 pt-2">
+              <span className="text-[#1FA45B] pt-2">Reference:</span>
+            </h1>
+            <h1 className="text-[#393939] flex gap-1 pt-2">
+              Surah Al-Fatir 35:15
+            </h1>
+            <div className="flex justify-end gap-10 pt-[28px]">
+              <Image src={bookmark1} alt="this is icon" />
+              <Image src={frame} alt="this is icon" />
+              <Image src={frame2} alt="this is icon" />
+              <Image src={share} alt="this is icon" />
+              <Image src={report} alt="this is icon" />
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="mt-14 ml-5 font-bold flex">
           <h1>Dua Page</h1>
           <div className="search">
             <fieldset className="w-full space-y-1 text-black flex">
@@ -340,7 +535,7 @@ const HomePage = () => {
               </div>
             </fieldset>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
