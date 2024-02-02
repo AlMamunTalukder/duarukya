@@ -1,7 +1,13 @@
 import React from "react";
+import HomePage from "./home/page";
 
 const page = () => {
-  return <div>welcome tarin apur jamai</div>;
+  return (
+    <div>
+      welcome
+      <HomePage />
+    </div>
+  );
 };
 
 export default page;
